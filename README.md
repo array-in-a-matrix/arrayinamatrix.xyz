@@ -6,5 +6,5 @@
 - interactive reactjs?
 - add an about me section
 - form for ideas
-
+- seprate page or section for dotfiles/configs 
 ---
