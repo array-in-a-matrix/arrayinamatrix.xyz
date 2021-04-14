@@ -454,11 +454,15 @@ a:hover {
   margin-left:0
  }
 }
+:root {
+    --left: #4A00E0;
+    --right: #8E2DE2;
+}
 .page-header {
  color:#fff;
  text-align:center;
  background-color:#159957;
- background-image:linear-gradient(120deg, #155799, #159957)
+ background-image:linear-gradient(120deg,var(--left), var(--right))
 }
 @media screen and (min-width: 64em) {
  .page-header {
