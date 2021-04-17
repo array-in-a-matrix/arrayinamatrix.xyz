@@ -21,7 +21,6 @@ let randomthemes = [
     ["#DA22FF", "#9733EE"]
   ];
   
-  //grab a random gradient
   function rand(items) {
     return items[~~(items.length * Math.random())];
   }
