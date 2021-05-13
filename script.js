@@ -27,9 +27,3 @@ function rand(items) {
 let randcolor = rand(randomthemes);
 document.documentElement.style.setProperty("--left", randcolor[0]);
 document.documentElement.style.setProperty("--right", randcolor[1]);
-
-function quadratic(numA, numB, numC) {
-  Xint1 = ((-numB) + Math.sqrt((Math.pow(numB, 2) - 4 * numA * numC))) / (2 * numA)
-  Xint2 = ((-numB) - Math.sqrt((Math.pow(numB, 2) - 4 * numA * numC))) / (2 * numA)
-  return [Xint1, Xint2]
-}
