@@ -18,7 +18,7 @@ let randomthemes = [
   ["#396afc", "#2948ff"],
   ["#673AB7", "#512DA8"],
   ["#4776E6", "#8E54E9"],
-  ["#DA22FF", "#9733EE"]
+  ["#DA22FF", "#9733EE"],
 ];
 
 function rand(items) {
@@ -29,7 +29,7 @@ document.documentElement.style.setProperty("--left", randcolor[0]);
 document.documentElement.style.setProperty("--right", randcolor[1]);
 
 function quadratic(numA, numB, numC) {
-  Xint1 = ((-numB) + Math.sqrt((Math.pow(numB, 2) - 4 * numA * numC))) / (2 * numA)
-  Xint2 = ((-numB) - Math.sqrt((Math.pow(numB, 2) - 4 * numA * numC))) / (2 * numA)
-  return [Xint1, Xint2]
+  Xint1 = (-numB + Math.sqrt(Math.pow(numB, 2) - 4 * numA * numC)) / (2 * numA);
+  Xint2 = (-numB - Math.sqrt(Math.pow(numB, 2) - 4 * numA * numC)) / (2 * numA);
+  return [Xint1, Xint2];
 }
