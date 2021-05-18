@@ -24,6 +24,7 @@ let randomthemes = [
 function rand(items) {
   return items[~~(items.length * Math.random())];
 }
+
 let randcolor = rand(randomthemes);
 document.documentElement.style.setProperty("--left", randcolor[0]);
 document.documentElement.style.setProperty("--right", randcolor[1]);
