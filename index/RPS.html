@@ -26,16 +26,20 @@
       <h1>Simple rock paper scissors game</h1>
       <p>made with Javascript</p>
       <section class="page-header">
+        <div id="gameScore">
+          <p id="scorePlayer"></p>
+          <p id="scoreCPU"></p>
+          <p id="round"></p>
+        </div>
         <script src="RPS.js"></script>
         <button class="btn" onclick="play('rock')">ROCK</button>
         <button class="btn" onclick="play('paper')">PAPER</button>
         <button class="btn" onclick="play('scissors')">SCISSORS</button>
-        <!-- <button class="btn" onclick="play('bomb')">BOMB</button> -->
         <div id="game">
-            <div id="score">
-                <p id="text"></p>
-                <strong id="winner"></strong>
-            </div>
+          <div id="choice">
+            <p id="text"></p>
+            <strong id="winner"></strong>
+          </div>
         </div>
       </section>
       <footer class="site-footer">
