@@ -88,7 +88,12 @@ function playGame() {
 
   p.textContent = `You:     ${userChoice}`;
   p.textContent += ` CPU:    ${computerChoice}`;
-  strong.textContent = winner;
+  
+  if (winner != "Tie") {
+    strong.textContent = "Winner: " + winner;
+  } else {
+    strong.textContent = "Tie game!";
+  }
 
   document.getElementById("game").appendChild(div).appendChild(p);
   document.getElementById("game").appendChild(div).appendChild(strong);
