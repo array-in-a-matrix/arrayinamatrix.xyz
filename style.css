@@ -710,3 +710,6 @@ a:hover {
     background-color: black;
     color: white;
   }
+.game {
+    font-size: 400%;
+}
