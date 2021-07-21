@@ -5,5 +5,6 @@ My personal website.
 
 ### To do:
 
+- favicon
 - remove unused css
-- seprate page for dotfiles/configs
+- page for dotfiles/configs
