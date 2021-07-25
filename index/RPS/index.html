@@ -1,0 +1,40 @@
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Template</title>
+    <link rel="stylesheet" href="../../style/style.css" />
+  </head>
+  <body>
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Rock Paper Scissors</h1>
+      <h2 class="project-tagline">Made using Javascript.</h2>
+
+      <a href="../../" class="btn">Home</a>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <section class="game">
+        <div id="gameScore">
+          <p><span id="scorePlayer"></span> <span id="scoreCPU"></span></p>
+          <p><span id="round"></span></p>
+        </div>
+
+        <div>
+          <script src="RPS.js"></script>
+          <button class="btn gameButton" onclick="play('rock')">🪨</button>
+          <button class="btn gameButton" onclick="play('paper')">📄</button>
+          <button class="btn gameButton" onclick="play('scissors')">✂️</button>
+        </div>
+
+        <div id="evaluation">
+          <p id="choice">
+            <span id="choicePlayer"></span> <span id="choiceCPU"></span>
+          </p>
+          <p><strong id="gameWinner"> </strong></p>
+        </div>
+      </section>
+      <footer class="site-footer">
+      </footer>
+    </main>
+  </body>
+</html>

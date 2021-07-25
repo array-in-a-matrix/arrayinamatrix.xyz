@@ -1,0 +1,56 @@
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Template</title>
+    <link rel="stylesheet" href="../../style/style.css" />
+  </head>
+  <body>
+    <header class="page-header" role="banner">
+      <h1 class="project-name">My Projects</h1>
+      <h2 class="project-tagline">Displaying thanks to the GitHub API.</h2>
+
+      <a href="../../" class="btn">Home</a>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <table>
+        <thead>
+          <tr>
+            <th style="text-align: left">Github projects</th>
+            <th style="text-align: left">Description</th>
+            <th style="text-align: left">GitHub link</th>
+            <th style="text-align: left">Language</th>
+          </tr>
+        </thead>
+        <tbody id="userRepo">
+          <script src="githubapi.js"></script>
+        </tbody>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th style="text-align: left">Other projects</th>
+            <th style="text-align: left">Description</th>
+            <th style="text-align: left">Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: left">Firefox black & red triangle theme</td>
+            <td style="text-align: left">
+              A red and black theme for firefox tabs.
+            </td>
+            <td style="text-align: left">
+              <a
+                href="https://addons.mozilla.org/en-US/firefox/addon/black-red-triangle-theme"
+                >https://addons.mozilla.org/en-US/firefox/addon/black-red-triangle-theme/</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <footer class="site-footer">
+      </footer>
+    </main>
+  </body>
+</html>

@@ -75,31 +75,16 @@ function playGame() {
   }
   console.log(score);
 
-  var div = document.getElementById("choice");
-  var p = document.getElementById("text");
-  var strong = document.getElementById("winner");
-  var scorePlayer = document.getElementById("scorePlayer");
-  var scoreCPU = document.getElementById("scoreCPU");
-  var round = document.getElementById("round");
-
-  scorePlayer.textContent = `Player wins: ${score.player}`;
+  scorePlayer.textContent = `Player wins: ${score.player}` + " ";
   scoreCPU.textContent = `Computer wins: ${score.cpu}`;
   round.textContent = `Round ${score.rounds}`;
-
-  p.textContent = `You:     ${userChoice}`;
-  p.textContent += ` CPU:    ${computerChoice}`;
-  
+  choicePlayer.textContent  = `You:     ${userChoice}`;
+  choiceCPU.textContent  = `CPU:     ${computerChoice}`;
   if (winner != "Tie") {
-    strong.textContent = "Winner: " + winner;
+    gameWinner.textContent = "Winner: " + winner;
   } else {
-    strong.textContent = "Tie game!";
+    gameWinner.textContent = "Tie game!";
   }
-
-  document.getElementById("game").appendChild(div).appendChild(p);
-  document.getElementById("game").appendChild(div).appendChild(strong);
-  document.getElementById("gameScore").appendChild(scorePlayer);
-  document.getElementById("gameScore").appendChild(scoreCPU);
-  document.getElementById("gameScore").appendChild(round);
 }
 
 function play(input) {
