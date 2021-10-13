@@ -1,10 +1,8 @@
 array-in-a-matrix.github.io <br>
-My personal website.
+My personal website. I display projects I worked on and stuff I made here.
 
 ---
 
 ### To do:
 
-- favicon
-- remove unused css
 - page for dotfiles/configs
