@@ -5,7 +5,7 @@
 @font-face {
     font-family: 'DarkNewRoman';
     src: url('darknewroman-webfont.woff2') format('woff2'),
-         url('darknewroman-webfont.woff') format('woff');
+        url('darknewroman-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

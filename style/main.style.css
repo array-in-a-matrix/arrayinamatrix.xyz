@@ -4,47 +4,56 @@
   --tertiary: #151b74;
   --transparent: transparent;
 }
+
 /* Animations */
 @-webkit-keyframes bg-scrolling-reverse {
   100% {
     background-position: 50px 50px;
   }
 }
+
 @-moz-keyframes bg-scrolling-reverse {
   100% {
     background-position: 50px 50px;
   }
 }
+
 @-o-keyframes bg-scrolling-reverse {
   100% {
     background-position: 50px 50px;
   }
 }
+
 @keyframes bg-scrolling-reverse {
   100% {
     background-position: 50px 50px;
   }
 }
+
 @-webkit-keyframes bg-scrolling {
   0% {
     background-position: 50px 50px;
   }
 }
+
 @-moz-keyframes bg-scrolling {
   0% {
     background-position: 50px 50px;
   }
 }
+
 @-o-keyframes bg-scrolling {
   0% {
     background-position: 50px 50px;
   }
 }
+
 @keyframes bg-scrolling {
   0% {
     background-position: 50px 50px;
   }
 }
+
 /* Main styles */
 body {
   margin-top: 13.5rem;
@@ -66,39 +75,51 @@ body {
   -o-animation-timing-function: linear;
   animation-timing-function: linear;
 }
+
 .larger-name {
   font-size: larger;
 }
+
 .smaller-name {
   font-size: smaller;
 }
-.main-content{
+
+.main-content {
   font-family: "Montserrat", sans-serif;
-};
+}
+
+;
+
 .project-name {
   color: --primary;
   font-family: Utopia, "Liberation Serif";
 }
+
 @media screen and (min-width: 64em) {
   .project-name {
     font-size: 8rem;
   }
+
   .main-content {
     font-size: 1.5rem;
   }
 }
+
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .project-name {
     font-size: 4rem;
   }
+
   .main-content {
     font-size: 1.25rem;
   }
 }
+
 @media screen and (max-width: 42em) {
   .project-name {
     font-size: 2rem;
   }
+
   .main-content {
     font-size: 1rem;
   }
@@ -107,17 +128,21 @@ body {
 a {
   background-color: var(--transparent);
 }
+
 a:active,
 a:hover {
   outline: 0;
 }
+
 a {
   color: var(--tertiary);
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
@@ -129,26 +154,31 @@ a:hover {
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
+
 .btn:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3);
 }
-.btn + .btn {
+
+.btn+.btn {
   margin-left: 1rem;
 }
+
 @media screen and (min-width: 64em) {
   .btn {
     padding: 0.75rem 1rem;
   }
 }
+
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .btn {
     padding: 0.6rem 0.9rem;
     font-size: 0.9rem;
   }
 }
+
 @media screen and (max-width: 42em) {
   .btn {
     display: block;
@@ -156,11 +186,13 @@ a:hover {
     padding: 0.75rem;
     font-size: 0.9rem;
   }
-  .btn + .btn {
+
+  .btn+.btn {
     margin-top: 1rem;
     margin-left: 0;
   }
 }
+
 * {
   box-sizing: border-box;
 }
@@ -170,32 +202,37 @@ input,
 optgroup,
 select,
 textarea {
- color:inherit;
- font:inherit;
- margin:0
+  color: inherit;
+  font: inherit;
+  margin: 0
 }
+
 button {
- overflow:visible
+  overflow: visible
 }
+
 button,
 select {
- text-transform:none
+  text-transform: none
 }
+
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
- -webkit-appearance:button;
- cursor:pointer
+  -webkit-appearance: button;
+  cursor: pointer
 }
+
 button[disabled],
 html input[disabled] {
- cursor:default
+  cursor: default
 }
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
- border:0;
- padding:0
+  border: 0;
+  padding: 0
 }
 
 
@@ -203,30 +240,37 @@ input::-moz-focus-inner {
   position: relative;
   display: inline-block;
 }
+
 .dropdown-content {
   display: none;
   position: relative;
 }
-.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 .project-tagline {
-  margin-bottom:2rem;
-  font-weight:normal;
-  opacity:0.7;
+  margin-bottom: 2rem;
+  font-weight: normal;
+  opacity: 0.7;
   font-family: "Montserrat", sans-serif;
- }
- @media screen and (min-width: 64em) {
+}
+
+@media screen and (min-width: 64em) {
   .project-tagline {
-   font-size:1.25rem
+    font-size: 1.25rem
   }
- }
- @media screen and (min-width: 42em) and (max-width: 64em) {
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
   .project-tagline {
-   font-size:1.15rem
+    font-size: 1.15rem
   }
- }
- @media screen and (max-width: 42em) {
+}
+
+@media screen and (max-width: 42em) {
   .project-tagline {
-   font-size:1rem
- }
+    font-size: 1rem
+  }
 }

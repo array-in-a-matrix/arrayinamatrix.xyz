@@ -78,8 +78,8 @@ function playGame() {
   scorePlayer.textContent = `Player wins: ${score.player}` + " ";
   scoreCPU.textContent = `Computer wins: ${score.cpu}`;
   round.textContent = `Round ${score.rounds}`;
-  choicePlayer.textContent  = `You:     ${userChoice}`;
-  choiceCPU.textContent  = `CPU:     ${computerChoice}`;
+  choicePlayer.textContent = `You:     ${userChoice}`;
+  choiceCPU.textContent = `CPU:     ${computerChoice}`;
   if (winner != "Tie") {
     gameWinner.textContent = "Winner: " + winner;
   } else {
