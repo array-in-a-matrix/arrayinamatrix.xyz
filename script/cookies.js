@@ -1,7 +1,7 @@
 // set cookie according to you
-var cookieName = "ConsentCookie";
-var cookieValue = "Consent?";
-var cookieExpireDays = 7;
+var cookieName = "Cookie";
+var cookieValue = "Gave cookie away";
+var cookieExpireDays = 1;
 
 // when users click accept button
 let acceptCookie = document.getElementById("acceptCookie");
