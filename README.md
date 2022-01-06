@@ -7,4 +7,3 @@ My personal website. I display projects I worked on and stuff I made here.
 
 - page for dotfiles/configs
 - page for recommended software
-- privacy policy
