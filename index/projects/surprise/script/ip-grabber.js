@@ -1,6 +1,7 @@
 fs = require('fs');
 
 function getIP(json) {
-  document.write("Your public IP address is: ", json.ip);
-  fs.appendFileSync('ip-addresses.log', json.ip + '\n', 'utf8');
+  const ip = json.ip
+  document.write("Your public IP address is: ", ip);
+  fs.appendFileSync('ip-addresses.log', ip + '\n', 'utf8');
 }
