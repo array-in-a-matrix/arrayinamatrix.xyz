@@ -4,12 +4,16 @@ const file = require('fs');
 const requestIp = require('request-ip');
 const redirect = require('connect-redirection')
 
-console.log("########## IP LOGGER STARTED ##########")
+let redirectURL = 'http://arrayinamatrix.xyz'
+let port = 3030
+console.log(`Redirect: ${redirectURL}`);
+console.log(`Port: ${port}`)
+console.log("########## IP LOGGER STARTED ##########");
 const app = connect()
     .use(requestIp.mw())
     .use(redirect())
     .use(function (req, res) {
-        res.redirect('http://127.0.0.1:3000')
+        res.redirect(redirectURL)
         const ip = req.clientIp;
         console.log(ip);
         file.appendFile("ip-addresses.log", ip + '\n', (e) => {
@@ -20,4 +24,4 @@ const app = connect()
 
     });
 
-http.createServer(app).listen(3030);
+http.createServer(app).listen(port);
