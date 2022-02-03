@@ -21,7 +21,7 @@ const app = connect()
         res.redirect(redirectURL)
         const ip = req.clientIp;
         console.log(ip);
-        file.appendFile("ip-addresses.log", ip + '\n', (e) => {
+        file.appendFile("./server/ip-grabber/ip-addresses.log", ip + '\n', (e) => {
             if (e) {
                 console.log(e);
             };
