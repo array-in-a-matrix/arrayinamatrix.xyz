@@ -21,7 +21,7 @@ const app = connect()
         res.redirect(redirectURL)
         const ip = req.clientIp;
         console.log(ip);
-        file.appendFile("./server/ip-grabber/ip-addresses.log", ip + '\n', (e) => {
+        file.appendFile("/matrix/nginx-proxy/data/matrix-domain/server/ip-grabber/ip-addresses.log", ip + '\n', (e) => {
             if (e) {
                 console.log(e);
             };
