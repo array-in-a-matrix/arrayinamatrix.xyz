@@ -19,9 +19,13 @@ const app = connect()
     .use(redirect())
     .use(function (req, res) {
         res.redirect(redirectURL)
-        const ip = req.clientIp;
-        console.log(ip);
-        file.appendFile("/matrix/nginx-proxy/data/matrix-domain/server/ip-grabber/ip-addresses.log", ip + '\n', (e) => {
+
+        let time = new Date();
+        let ip = req.clientIp;
+        let output = time.getFullYear() + "-" + ("0" + (time.getMonth() + 1)).slice(-2) + "-" + ("0" + time.getDate()).slice(-2) + " " + time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds() + ">> " + ip;
+
+        console.log(output);
+        file.appendFile("/matrix/nginx-proxy/data/matrix-domain/server/ip-grabber/ip-addresses.log", output + '\n', (e) => {
             if (e) {
                 console.log(e);
             };
