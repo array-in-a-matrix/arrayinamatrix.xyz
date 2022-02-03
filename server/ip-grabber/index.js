@@ -4,17 +4,16 @@ const file = require('fs');
 const requestIp = require('request-ip');
 const redirect = require('connect-redirection')
 
-var httpsOptions = {
-    key: fs.readFileSync('/path/to/HTTPS/server-key.pem'),
-    cert: fs.readFileSync('/path/to/HTTPS/server-crt.pem')
-};
+let redirectURL = 'https://arrayinamatrix.xyz'
+if (process.argv[2] != undefined) {
+    redirectURL = process.argv[2]
+}
 
-let redirectURL = 'http://arrayinamatrix.xyz'
-let http_port = 3030
-let https_port = 3031
+let httpPort = 3030
 console.log(`Redirect: ${redirectURL}`);
-console.log(`Port: ${http_port}`)
+console.log(`Port: ${httpPort}`)
 console.log("########## IP LOGGER STARTED ##########");
+
 const app = connect()
     .use(requestIp.mw())
     .use(redirect())
@@ -27,8 +26,6 @@ const app = connect()
                 console.log(e);
             };
         });
-
     });
 
-http.createServer(app).listen(http_port);
-https.createServer(httpsOptions, app).listen(https_port);
+http.createServer(app).listen(httpPort);
