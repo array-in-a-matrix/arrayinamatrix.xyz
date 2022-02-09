@@ -25,15 +25,16 @@
             <form>
                 <label for="number">Base 10 number:</label>
                 <br>
-                <input name="number" id="number" type="number" value="420" step="1">
+                <input name="number" id="number" type="number" step="1" onChange="numberSystemConverter();">
                 <br>
-                <label for="base">New base:</label>
+                <label for="base">New base (Range 2-36):</label>
                 <br>
-                <input name="base" id="base" type="number" value="2" step="1" min="2" max="36">
+                <input name="base" id="base" type="number" value="2" step="1" min="2" max="36"
+                    onChange="numberSystemConverter();">
                 <br>
                 <label for="converted">Converted number:</label>
                 <br>
-                <input name="converted" id="converted" type="text">
+                <input name="converted" id="converted" type="text" disabled="true" onChange="numberSystemConverter();">
             </form>
         </section>
 
