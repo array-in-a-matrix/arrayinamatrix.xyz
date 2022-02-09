@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number System Converter</title>
     <link rel="stylesheet" href="/style/style.css" />
+    <link rel="icon" type="image/x-icon" href="/res/site/icons/favicon.ico">
     <script src="./script/script.js"></script>
 </head>
 
@@ -23,17 +24,18 @@
         <section>
             <h3>Enter a decimal number to convert and a base.</h3>
             <form>
-                <label for="number">Base 10 number:</label>
+                <label for="number">Number:</label><br>
+                <input name="number" id="number" type="text" step="1" onChange="numberSystemConverter();">
                 <br>
-                <input name="number" id="number" type="number" step="1" onChange="numberSystemConverter();">
-                <br>
-                <label for="base">New base (Range 2-36):</label>
-                <br>
-                <input name="base" id="base" type="number" value="2" step="1" min="2" max="36"
+                <label for="base">Base (Range 2-36):</label><br>
+                <input name="base" id="base" type="number" value="10" step="1" min="2" max="36"
                     onChange="numberSystemConverter();">
                 <br>
-                <label for="converted">Converted number:</label>
+                <label for="new-base">New base (Range 2-36):</label><br>
+                <input name="new-base" id="new-base" type="number" value="2" step="1" min="2" max="36"
+                    onChange="numberSystemConverter();">
                 <br>
+                <label for="converted">Converted number:</label><br>
                 <input name="converted" id="converted" type="text" disabled="true" onChange="numberSystemConverter();">
             </form>
         </section>
