@@ -4,7 +4,7 @@ const file = require('fs');
 const requestIp = require('request-ip');
 const redirect = require('connect-redirection')
 
-let redirectURL = 'https://arrayinamatrix.xyz'
+let redirectURL = 'https://arrayinamatrix.xyz/res/site/images/trollface.gif'
 if (process.argv[2] != undefined) {
     redirectURL = process.argv[2]
 }
