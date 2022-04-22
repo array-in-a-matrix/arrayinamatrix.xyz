@@ -732,3 +732,7 @@ section {
   margin: 2%;
   margin-top: 0;
 }
+
+main div  {
+  box-sizing: unset
+}
