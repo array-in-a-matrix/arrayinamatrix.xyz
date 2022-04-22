@@ -696,12 +696,12 @@ body {
   }
 
   100% {
-    border-left-color: white;
+    border-left-color: rgba(255, 255, 255, 0);
   }
 }
 
 section {
-  border-left: 40px solid white;
+  border-left: 40px solid rgba(255, 255, 255, 0);
   padding: 0px;
   transition: all 0.5s ease;
   padding-right: 50px;
@@ -729,5 +729,6 @@ section {
 }
 
 .grid-item {
+  margin: 2%;
   margin-top: 0;
 }
