@@ -712,22 +712,23 @@ section {
   transition: transform .2s;
   margin: 0 auto;
 }
+
 .zoom img {
   width: 100%;
   height: auto;
 }
+
 .zoom:hover {
   transform: scale(1.5);
 }
 
-.grid {
+.grid,
+grid-item {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-evenly;
-}
-
-.grid-item {
-  margin: 1rem;
+  margin: 2%;
+  margin-top: 0;
 }
