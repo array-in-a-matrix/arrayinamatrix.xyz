@@ -734,3 +734,6 @@ section {
 main div  {
   box-sizing: unset
 }
+.center {
+  text-align: center;
+}
