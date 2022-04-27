@@ -1,6 +1,14 @@
+#specific directories
+node_modules/
+blog/
+
+# glob match
 *hidden*
 *secret*
 *private*
+*ignore*
+*test*
+
+# file extensions
 *.log
-node_modules
-blog
+*.txt
