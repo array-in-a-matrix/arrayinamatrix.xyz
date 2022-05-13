@@ -1,6 +1,6 @@
 #specific directories
-node_modules/
-blog/
+node_modules
+res
 
 # glob match
 *hidden*
