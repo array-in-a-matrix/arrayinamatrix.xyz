@@ -1,5 +1,8 @@
 #specific directories
 node_modules
+.well-known
+
+# symbolic links
 res
 
 # glob match
